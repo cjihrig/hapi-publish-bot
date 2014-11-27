@@ -2,7 +2,7 @@ var wreck = require('wreck');
 var npm = require('npm-publish-stream');
 var settings = {
   useFilter: true,
-  startTime: new Date(Date.now() - 60 * 1000 * 10), //new Date()
+  startTime: new Date(Date.now() - 60 * 1000 * 60), //new Date()
   hook: 'https://hooks.slack.com/services/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',
   npmPackageLink: 'https://www.npmjs.org/package/{module}',
   filterList: ['accept', 'ammo', 'b64', 'bassmaster', 'bell', 'boom', 'bossy', 'call', 'catbox', 'catbox-memcached', 'catbox-memory', 'catbox-mongodb', 'code', 'confidence', 'content', 'crumb', 'cryptiles', 'faketoe', 'glue', 'good', 'good-broadcast', 'good-console', 'good-file', 'good-http', 'good-reporter', 'good-udp', 'h2o2', 'hapi', 'hapi-auth-basic', 'hapi-auth-cookie', 'hapi-auth-hawk', 'heavy', 'hoek', 'inert', 'items', 'joi', 'kilt', 'lab', 'lout', 'mimos', 'nigel', 'peekaboo', 'pez', 'poop', 'qs', 'rejoice', 'reptile', 'scooter', 'shot', 'statehood', 'subtext', 'topo', 'tv', 'vise', 'vision', 'visionary', 'wreck', 'yar']
